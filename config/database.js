@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 // Connect To Database
 const connectToDatabase = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI, {
+    await mongoose.connect('mongodb+srv://premest-user-api:dr3WgycKTBVtF4k1@cluster0.moovs.mongodb.net/Mest-projects?retryWrites=true&w=majority', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify: false,
@@ -18,3 +18,10 @@ const connectToDatabase = async () => {
 }
 
 connectToDatabase();
+
+
+
+
+//dr3WgycKTBVtF4k1
+
+// mongodb+srv://<username>:<password>@<your-cluster-url>/test?retryWrites=true&w=majority
